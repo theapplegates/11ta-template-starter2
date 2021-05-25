@@ -23,14 +23,14 @@
       {% include "components/nav.njk" %}
 
       {#  Allows a user to easily change the Hero type on the Home page...or any page.
-          See /src/home.md for how to use. 
+          See /src/home.md for how to use.
       #}
       {% if hero %}
         {% set heroComponent = ['components/hero-', hero, '.njk'] %}
         {% include heroComponent | join %}
       {% endif %}
 
-      {# If any frontmatter includes images.feature, insert it at the top of the page, 
+      {# If any frontmatter includes images.feature, insert it at the top of the page,
       below the nav and outside the default wrapper below. #}
       {% if images.feature %}
         <figure class="w-screen {{ images.height or "h-48 md:h-1/3" }}">
@@ -49,11 +49,14 @@
 
     <script src="/assets/main.js" defer></script>
 
+
     {# Only include the Flickity js if this page uses a hero.carousel  #}
     {% if hero == "carousel" or product.carousel %}
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
       <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
     {% endif %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.11.4/cloudinary-core-shrinkwrap.min.js" integrity="sha512-tRrUhjKg6n9eE2OxOkZ6pPITzcBOyaVQwYABomTDemvbGbJDxLKhL5iQikW3Ht4mwlDbb7/v0TjaLs7ymnQi/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   </body>
 </html>

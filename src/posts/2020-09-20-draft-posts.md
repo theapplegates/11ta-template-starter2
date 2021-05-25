@@ -19,21 +19,27 @@ tags:
   - frontmatter
 ---
 
+<img
+data-src="https://res.cloudinary.com/paulportfolio/image/upload/f_auto,q_auto,w_1000,c_scale/v1621986149/goose-wp/Volvo-XC60.jpg"
+alt=""
+class="cld-responsive" />
+
+
 After quietly launching v1.0.0 yesterday _(Saturday, Sep. 19, 2020)_ I was reorganizing my TODO list on this project and saw the **"Someday: Drafts"** item.
 
 Only intending to do a bit of searching for those who may have already tackled "drafts" in 11ty, I quickly realized I could leverage [11ty's Collections](https://www.11ty.dev/docs/collections/) and [environment variables](https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables) in a simple conditional using [custom filtering in the .eleventy.js config file](https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting).
 
  {% wrap "my-4 border border-red-300 bg-red-100 rounded-lg" %}
 
- **NOTE:** I'm still interested in refactoring this conditional into a more elegant, less repetitive solution. I've found the [optional chaining (?.) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) and it seems exactly what I want to do... But I haven't yet figured out how to implement it within the `return` part of the `.addCollection` function. 
- 
+ **NOTE:** I'm still interested in refactoring this conditional into a more elegant, less repetitive solution. I've found the [optional chaining (?.) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) and it seems exactly what I want to do... But I haven't yet figured out how to implement it within the `return` part of the `.addCollection` function.
+
  If you're reading this and you know how, please [ping me on Twitter](https://twitter.com/shanerobinson).
 
 {% endwrap %}
 
 ```js
-/** .eleventy.js 
- * 
+/** .eleventy.js
+ *
  * Collections
  * ============================
  *
