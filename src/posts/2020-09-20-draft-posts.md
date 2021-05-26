@@ -20,10 +20,15 @@ tags:
 ---
 
 <img
-data-src="https://res.cloudinary.com/paulportfolio/image/upload/f_auto,q_auto,w_1000,c_scale/v1621986149/goose-wp/Volvo-XC60.jpg"
+data-src="https://res.cloudinary.com/paulportfolio/image/upload/f_auto,q_auto,w_auto,c_scale/v1621986149/goose-wp/Volvo-XC60.jpg"
 alt=""
 class="cld-responsive" />
 
+
+<img
+data-src="https://res.cloudinary.com/paulportfolio/image/upload/w_auto,f_auto,q_auto,c_scale/v1621631550/goose-wp/Volvo-XC-60.jpg"
+alt=""
+class="cld-responsive" />
 
 After quietly launching v1.0.0 yesterday _(Saturday, Sep. 19, 2020)_ I was reorganizing my TODO list on this project and saw the **"Someday: Drafts"** item.
 
