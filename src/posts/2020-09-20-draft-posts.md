@@ -30,6 +30,21 @@ data-src="https://res.cloudinary.com/paulportfolio/image/upload/w_auto,f_auto,q_
 alt=""
 class="cld-responsive" />
 
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>List icons can</li>
+<li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>be used to</li>
+<li><span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span>replace bullets</li>
+<li><span class="fa-li"><i class="fa-regular fa-square"></i></span>in lists</li>
+</ul>
+
+<div class="fa-3x">
+<i class="fa-duotone fa-camera"></i> <!-- a duotone style camera icon -->
+<i class="fa-duotone fa-fire-alt"></i> <!-- a duotone style fire-alt icon -->
+<i class="fa-duotone fa-bus-alt"></i> <!-- a duotone style bus-alt icon -->
+<i class="fa-duotone fa-fill-drip"></i> <!-- a duotone style fill-drip icon -->
+</div>
+
+
 After quietly launching v1.0.0 yesterday _(Saturday, Sep. 19, 2020)_ I was reorganizing my TODO list on this project and saw the **"Someday: Drafts"** item.
 
 Only intending to do a bit of searching for those who may have already tackled "drafts" in 11ty, I quickly realized I could leverage [11ty's Collections](https://www.11ty.dev/docs/collections/) and [environment variables](https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables) in a simple conditional using [custom filtering in the .eleventy.js config file](https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting).
